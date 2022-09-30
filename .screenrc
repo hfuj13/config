@@ -1,0 +1,26 @@
+altscreen on
+autodetach on
+#cjkwidth off
+cjkwidth on
+defencoding utf-8
+defscrollback 1000000
+defutf8 on
+escape ^Qq
+hardstatus alwayslastline "%w"
+shell $SHELL
+shelltitle "$ |bash"
+startup_message off
+
+# screenじゃなくxtermのスクロール機能を使う
+termcapinfo linux ti@:te@
+#termcapinfo xterm ti@:te@ #
+termcapinfo xterm* ti@:te@
+termcapinfo xterm-color ti@:te@
+
+# windowを1から起動
+bind c screen 1
+bind ^c screen 1
+bind 0 select 10
+screen 1
+
+#term "screen-256color"
