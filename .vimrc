@@ -48,11 +48,12 @@ else
 endif
 nnoremap <silent> <C-q> <NOP>
 nnoremap <F3> <Cmd>setlocal relativenumber!<CR>
-nnoremap <silent> <C-l> <Esc>:nohlsearch<CR>
+nnoremap <silent> <C-l> <Esc>:nohlsearch<CR>z.
 nnoremap <silent> <C-s>l <Esc>:set number!<CR>
 nnoremap <silent> <C-s>h <Esc>:set cursorline!<CR>
 nnoremap <silent> <C-s>v <Esc>:set cursorcolumn!<CR>
 nnoremap <silent> <Leader>li :set list!<CR>
+nnoremap <silent> <Leader>wcnt :%s/./&/gn<CR>:nohlsearch<CR>
 
 if v:version >= 900
   def s:Is_plugin_installed(plugin_name: string): bool
